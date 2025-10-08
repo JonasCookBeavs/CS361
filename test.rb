@@ -1,0 +1,1 @@
+puts("I ate #{2 + 1} pizzas today")

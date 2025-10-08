@@ -1,0 +1,3 @@
+What are the benefits of using functions in this case?
+
+It allows for much easier configurations when you do need to change something. Before, we had to copy-paste the same piece of code a few different times, and it really cluttered up the code. With functions, we can just write the code once and then use it in several places, instead of havingo to rewrite everything. It generally looks a lot cleaner as well, which is nice.
