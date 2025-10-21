@@ -14,7 +14,24 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
-  # WRITE THIS CODE
+  side_sum = [a,b,c].reduce(:+)
+  long_side = [a,b,c].max
+  
+  if a <= 0 or b <= 0 or c <= 0
+    raise TriangleError
+  end
+  if side_sum <= long_side * 2
+    raise TriangleError
+  end
+  if a == b and a == c and b == c
+    return :equilateral
+  end
+  if a == b or a == c or b == c and not (a == b and a == c and b == c)
+    return :isosceles
+  end
+  if a != b and a != c and b != c
+    return :scalene
+  end
 end
 
 # Error class used in part 2.  No need to change this code.
